@@ -12,7 +12,7 @@ import java.io.IOException;
 
 class Mazegame {
 	public static void main(String[] args) throws IOException {
-		//BEnvinguda
+		//Benvinguda
 		System.out.println("Joc del laberint");
 		System.out.println("================");
 		System.out.println("H: mostra ajuda");
