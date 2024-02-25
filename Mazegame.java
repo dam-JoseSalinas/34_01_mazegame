@@ -6,7 +6,7 @@ Descripció:
 
 */
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.FileReader;z
 import java.io.InputStreamReader;
 import java.io.IOException;
 
@@ -60,7 +60,7 @@ class Mazegame {
 		F: mou una passa endavant
 		nF: mou n passes endavant
 		Q: Sortir
-		""";
+		"""
 		System.out.println(helpText);
 	}
 	static void girar_esquerra() {
