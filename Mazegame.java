@@ -44,7 +44,7 @@ class Mazegame {
 			case "nf":
 				break;
 			case "q":
-				System.out.println("Adu CAGUETA!");
+				System.out.println("Adeu CAGUETA!");
 				System.exit(0);
 			default:
 				System.out.println("Esculll una de les opcions→");
