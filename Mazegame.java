@@ -1,24 +1,29 @@
 /*Exercici UF4_01.
 Integrants de la colaboració:
 	- Jose Salinas
-Descripció: 
+Descripció: Joc Mazegame
 
 
 */
 import java.io.BufferedReader;
-import java.io.FileReader;z
+import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
 class Mazegame {
+	public static void MostraMenuPrincipal() {
+	
+	}
+
 	public static void main(String[] args) throws IOException {
-		//Benvinguda
+		//Mostra benvinguda
 		System.out.println("Joc del laberint");
 		System.out.println("================");
 		System.out.println("H: mostra ajuda");
-		System.out.println("\nLaberint: " + args[0]);
+		System.out.println("");
+		System.out.println("Laberint: " + args[0]);
 		
-		//Llegeix i Mostra mapa
+		//Llegeix fitxer y mostra
 		InputStreamReader cursor = new FileReader(args[0]);
 		BufferedReader reader = new BufferedReader(cursor);
 		String linea = "";
@@ -26,7 +31,10 @@ class Mazegame {
 			System.out.println(linea);
 		}
 		
-		//Executa opcio
+		//Llegeix opcio y executa
+	}
+	
+	static void executaOpcio() {
 		System.out.print("> ");
 		String userInput = new BufferedReader(new InputStreamReader(System.in)).readLine();
 		switch (userInput.toLowerCase()) {
@@ -51,7 +59,7 @@ class Mazegame {
 		}
 	}
 	
-	static void mostrar_help() {
+	static void mostrarHelp() {
 		String helpText = """
 		Les opcions disponibles són:
 		H: mostra aquest text d\'ajuda
