@@ -23,14 +23,7 @@ public class Mazegame {
 		System.out.println("");
 	}
 
-	public static void mostrarMapa() throws Exception {
-		InputStreamReader sourceReader = new FileReader(filePath);
-		BufferedReader reader = new BufferedReader(sourceReader);
-		String linea = "";
-		while ( (linea=reader.readLine() ) != null) {
-			System.out.println(linea);
-		}
-	}
+	
 	public static void main(String[] args) {
 		//Validicio argument de fitxer .dat existent
 		if (args.length < 1) {return;}
