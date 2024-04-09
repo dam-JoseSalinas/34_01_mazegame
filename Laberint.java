@@ -7,7 +7,8 @@ public class Laberint{
    private int intents;
    private String fitxer;
    
-   public String actualizarMapa(){
+   public char[][] actualizarMapa(){
+        char[][] coordenadas;
         return "";
    }
    public void mostrarMapa(String filePath) throws Exception {
@@ -17,24 +18,28 @@ public class Laberint{
 		int contador=0;
 		while ( (linea=reader.readLine() ) != null) {
 		    if(contador==0){
+		        coordenadas=new char[linea.charAt(0)][linea.charAt(2)];
 		        continue;
 		    }
 		    String nuevaLinea="";
 		    contador++;
 		    for(int i=0;i<linea.length();i++){
 			    char letra=linea.charAt(i);
-			    if(letra=='X'){
+			    for(){
+			        if(letra=='X'){
+			        
+			        } else if(letra=='.'){
 			    
-			    } else if(letra=='.'){
+			          }else if(letra=='G'){
 			    
-			    }else if(letra=='G'){
+			         }else if(letra=='E'){
 			    
-			    }else if(letra=='E'){
-			    
+			       }
+			        System.out.print(letra);
 			    }
-			    System.out.print(letra);
-			}
+		    }
 		}
+		
 	}
 	public static void main(String [] args){
 	    Laberint lab=new Laberint();
