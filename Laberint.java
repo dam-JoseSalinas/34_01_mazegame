@@ -164,12 +164,5 @@ public class Laberint{
 	public String actualitzarMapaInvisible() {
 		return "";
 	}
-	
-	
-
-	public static void main(String [] args){
-		
-	    
-	}
 }
 

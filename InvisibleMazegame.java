@@ -13,9 +13,6 @@ import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import javax.print.DocFlavor.STRING;
-
 import java.lang.Thread;
 
 public class InvisibleMazegame {
@@ -48,7 +45,6 @@ public class InvisibleMazegame {
 		if (status == 2) {
 			System.exit(0);
 		}
-		System.out.println("Enter per continuar");
 		try {
 			new BufferedReader(new InputStreamReader(System.in)).readLine();	
 		} catch (IOException e) {
@@ -94,10 +90,8 @@ public class InvisibleMazegame {
 			} else if (comanda.matches("\\d+f")) {
 				int pases = Integer.parseInt(comanda.replaceAll(".*?(\\d+).*", "$1"));
 				avatar.avança(pases);
-			} else {
-				
 			}
-		
+		System.out.println("Enter per continuar");
 		return 0;
 				
 				
