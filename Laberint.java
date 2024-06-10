@@ -77,10 +77,10 @@ public class Laberint{
 		}
     }
 
-	private void recorrerMapa() {
-
-	}
 	private void procesarMapaInvisible() {
+		for (int x = 0; x < this.mapa.length; x++) {
+			
+		}
 
 	}
 
@@ -163,6 +163,9 @@ public class Laberint{
 
 	public String actualitzarMapaInvisible() {
 		return "";
+	}
+	public static void main(String[] args) {
+		
 	}
 }
 
